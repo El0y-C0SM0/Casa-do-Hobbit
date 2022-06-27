@@ -27,52 +27,49 @@ header{
     background-color: #380608;
     box-sizing: border-box;
 }
+section{
+    padding: 2em;
+}
 #introdução{
     background-image: url(imgs/fundodepapelvelho.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid #380608;
-    padding: 1em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
 }
 #O-que-é-RPG{
     background-image: url(imgs/fundodepapelvelho.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid #380608;
-    padding: 1em;
-    margin-bottom: 3em; 
+    margin-bottom: 4em; 
 }
 #O-que-é-DeD{
     background-image: url(imgs/fundodepapelvelho.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid #380608;
-    padding: 1em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
 }
 #Regras{
     background-image: url(imgs/fundodepapelvelho.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid #380608;
-    padding: 1em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
 }
 #Raças-e-Classes{
     background-image: url(imgs/fundodepapelvelho.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid #380608;
-    padding: 1em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
 }
 #encerramento{
     background-image: url(imgs/fundodepapelvelho.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid #380608;
-    padding: 1em;
 }
 #logo{
     margin: 1em 0em;
@@ -87,6 +84,7 @@ header{
     justify-content: center;
 }
 h1, h2, h3{
+    font-size: 2em;
     font-family: 'OldLondon';
     text-align: center;
 }
@@ -94,6 +92,7 @@ p{
     text-align: left;
 }
 #imagem-de-dado{
+    margin-top: 3em;
     height: 10em;
 }
 
@@ -120,4 +119,14 @@ a:active{
 }
 a:visited{
     color: #8b2326;
+}
+.nota{
+    color: #353434;
+}
+p:first-of-type::first-letter {
+    float: left;
+    font-family: 'OldLondon';
+    font-size: 3em;
+    line-height: 0.6em;
+    padding-top: 0.1em;
 }
