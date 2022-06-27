@@ -1,22 +1,82 @@
 html, body {
     min-height: 100%;
-  } 
+}
 body{
-    background-image: url("imgs/fundodepapelvelho.jpg");
-    background-repeat: repeat;
-    background-position:center  top;
-    background-size:  contain;
+    margin: 0px 0px;
+}
+main{
+    background-image: url("imgs/biblioteca2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3em;
+}
+main section{
     margin: 0% 10% 0% 10%;
-    text-align: center  ;
+    text-align: center;
     font-size: larger;
-    
-    
-
+}
+@font-face {
+    font-family: 'OldLondon';
+    src: url(Fonts/OldLondon.ttf), url(Fonts/Olondon_.otf);
+}
+header{
+    text-align: center;
+    margin: auto;
+    background-color: #380608;
+    box-sizing: border-box;
+}
+#introdução{
+    background-image: url(imgs/fundodepapelvelho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #380608;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+#O-que-é-RPG{
+    background-image: url(imgs/fundodepapelvelho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #380608;
+    padding: 1em;
+    margin-bottom: 3em; 
+}
+#O-que-é-DeD{
+    background-image: url(imgs/fundodepapelvelho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #380608;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+#Regras{
+    background-image: url(imgs/fundodepapelvelho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #380608;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+#Raças-e-Classes{
+    background-image: url(imgs/fundodepapelvelho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #380608;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+#encerramento{
+    background-image: url(imgs/fundodepapelvelho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #380608;
+    padding: 1em;
 }
 #logo{
-    margin:0% 25% 0% 15% ;
-    display: flex;  
-    justify-content:center;
+    margin: 1em 0em;
+    height: 12em;
 }
 #bemvindo{
     color: #cc2228;
@@ -26,10 +86,38 @@ body{
     display: flex;  
     justify-content: center;
 }
-footer{
+h1, h2, h3{
+    font-family: 'OldLondon';
+    text-align: center;
+}
+p{
     text-align: left;
-    
-    
-    
-    
+}
+#imagem-de-dado{
+    height: 10em;
+}
+
+footer{
+    display: flex;
+    margin: 0% 0% 0% 0%;
+    justify-content: space-evenly;
+    text-align: left;
+    padding: 1em 1em;
+    background-color: #380608;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a:link{
+    color: rgb(240, 24, 24);
+}
+a:hover{
+    color: #cc2228;
+}
+a:active{
+    color: rgb(110, 20, 20);
+}
+a:visited{
+    color: #8b2326;
 }
