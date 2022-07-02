@@ -5,7 +5,7 @@ body{
     margin: 0px 0px;
 }
 main{
-    background-image: url("imgs/biblioteca2.jpg");
+    background-image: url("imgs/biblioteca.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -71,6 +71,31 @@ section{
     background-size: cover;
     border: 3px solid #380608;
 }
+.ficha{
+    background-image: url(imgs/fundodepapelvelho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #380608;
+}
+.descrição{
+    background-image: url(imgs/fundodepapelvelho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #380608;
+}
+.cabeçalho ul{
+    text-align: left;
+    margin: 1em;
+    line-height: 0.3;
+}
+#atributos{
+    clear: left;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
 #logo{
     margin: 1em 0em;
     height: 12em;
@@ -83,13 +108,20 @@ section{
     display: flex;  
     justify-content: center;
 }
-h1, h2, h3{
+h1, h2, h3, h4{
     font-size: 2em;
     font-family: 'OldLondon';
     text-align: center;
 }
 p{
     text-align: left;
+}
+.animação{
+    float: right;
+    width: 14em;
+    border: 4px solid #380608;
+    border-radius: 50%;
+    margin: 5px;
 }
 #imagem-de-dado{
     margin-top: 3em;
@@ -114,11 +146,11 @@ a:link{
 a:hover{
     color: #cc2228;
 }
-a:active{
-    color: rgb(110, 20, 20);
-}
 a:visited{
-    color: #8b2326;
+    color: rgb(240, 24, 24);
+}
+a:active{
+    color: #a50e13;
 }
 .nota{
     color: #353434;

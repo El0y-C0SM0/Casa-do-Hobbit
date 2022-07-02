@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csszindoscria.css">
+    <title>Sobre Eloy</title>
+    <style>
+        /*preferi usar style para aproveitar o outro css e só fazer algumas alterações e tambem porque é mais*/
+        header{
+            margin-top: -2em;
+            height: auto;
+            justify-content: center;
+            padding: 1%;
+        }
+        nav{
+            background-color: #380608;
+            padding: 1%;
+            font-size: x-large;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        main{
+            display: flex;
+            padding: 0px;
+        }
+        main section{
+            margin: 3%;
+        }
+        header h1{
+            font-size: 4em;
+            color: rgb(240, 24, 24);
+        }
+        .ficha{
+            flex: 3;
+            padding-left: -1em;
+        }
+        .descrição{
+            flex: 4;
+            padding: 5%;
+        }
+        .fotinha{
+            height: 15em;
+            margin: 2em 2em 1em 2em;  
+            border-radius: 50%;
+            border: 3px solid #380608;
+        }
+        h2, h3, h4{
+            text-align: left;
+            margin-bottom: 0em;
+        }
+        .cabeçalho h4{
+            display: inline-block;
+            margin-left: -1em;
+        }
+        .infocabç{
+            font-size: x-large;
+        }
+        p:first-of-type::first-letter {
+            font-family: 'Times New Roman', Times, serif;
+            float: none;
+            font-size: 1em;
+        }
+        /*tem que arrumar a parte que aparece os atributos para aparecerem em article do mesmo tamamho e 3 por linha, tentei usar grid*/
+        article{
+            border: 2px solid #380608;
+            margin: 3% 3%;
+        }
+        article ul{
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+        .atributos{
+            justify-content: left;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+                "HP Prof Armor"
+                "Força Des Caris"
+                "Sab Int Const";
+        }
+        #HP{
+            grid-area: HP;
+        }
+        #Prof{
+            grid-area: Prof;
+        }
+        #Armor{
+            grid-area: Armor;
+        }
+        #Força{
+            grid-area: Força;
+        }
+        #Des{
+            grid-area: Des;
+        }
+        #Caris{
+            grid-area: Caris;
+        }
+        #Sab{
+            grid-area: Sab;
+        }
+        #Int{
+            grid-area: Int;
+        }
+        #Const{
+            grid-area: Const;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sobre nós</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="sobreDavi.html">Davi, o</a></li>
+            <li><a href="sobreDavid.html">David, o</a></li>
+        </ul>
+    </nav>
+    <main class="sobrepg">
+        <section class="ficha">
+            <div class="cabeçalho">
+                <img src="imgs/imgEloy.jpeg" alt="Eloy, O Ladino de Vakker Horisont" class="fotinha">
+                <ul>
+                    <li><h4>Nome:</h4> <span class="infocabç">Eloy Ribeiro</span></li>
+                    <li><h4>Classe:</h4> <span class="infocabç">Ladino</span></li>
+                    <li><h4>Nivel:</h4> <span class="infocabç">16</span></li>
+                </ul>
+            </div>
+            <div id="atributos">
+                <article id="HP">
+                    <ul>
+                        <li>HP</li>
+                        <li>20/35</li>
+                    </ul>
+                </article>
+                <article id="Prof">
+                    <ul>
+                        <li>Proficiência</li>
+                        <li>+3</li>
+                    </ul>
+                </article>
+                <article id="Armor">
+                    <ul>
+                        <li>Armor</li>
+                        <li>15</li>
+                    </ul>
+                </article>
+                <article id="Força">
+                    <ul>
+                        <li class="atr">força</li>
+                        <li>9</li>
+                        <li class="modatr">0</li>
+                    </ul>
+                </article>
+                <article id="Des">
+                    <ul>
+                        <li class="atr">destreza</li>
+                        <li>12</li>
+                        <li class="modatr">+2</li>
+                    </ul>
+                </article>
+                <article id="Caris">
+                    <ul>
+                        <li class="atr">carisma</li>
+                        <li>12</li>
+                        <li class="modatr">+2</li>
+                    </ul>
+                </article>
+                <article id="Sab">
+                    <ul>
+                        <li class="atr">sabedoria</li>
+                        <li>11</li>
+                        <li class="modatr">+1</li>
+                    </ul>
+                </article>
+                <article id="Int">
+                    <ul>
+                        <li class="atr">inteligência</li>
+                        <li>13</li>
+                        <li class="modatr">+3</li>
+                    </ul>
+                </article>
+                <article id="Const">
+                    <ul>
+                        <li class="atr">constituição</li>
+                        <li>10</li>
+                        <li class="modatr">+1</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="descrição">
+            <h2>Tendencia:</h2>
+            <p>Neutro</p>
+            <h2>Traços de Personalidade:</h2>
+            <p>Sinto quase uma necessidade de estar aprendendo, mesmo que isso me quase grande estresse.</p>
+            <p>Escuto cada lado, e seus argumentos, antes de tomar uma decisão final, e detesto opinar sobre assuntos que não compreendo ou de pesssoas que insistem no que não sabem.</p>
+            <p>Sou horrível em apresentações, situações sociais e tambem não sou fã de grandes aglomerações</p>
+            <p>Apesar de me considerar introvertido preciso tomar cuidado com para não falar de mais quando o tema da conversa é um assunto que eu gosto e/ou tenho intimidade com as pessoas.</p>
+            <h2>Ideais:</h2>
+            <p>Emoções não devem nublar seu pensamento lógico.</p>
+            <p>Me dedico a estudar e aprender tanto sobre mim como sobre os mais diversos assuntos.</p>
+            <p>O objetivo de uma vida de estudos é a melhoria de si mesmo.</p>
+            <h2>habilidades e Proficiências</h2>
+            <p>Estou aprendendo a andar de skate.</p>
+            <p>Acho sei desenhar um pouco, mas faz muito tempo que desenho.</p>
+            <p>Sei (e estou aprendendo) Front-end e o básico da lingagem C.</p>
+            <h2>Minha história</h2>
+            <p>Nasci no primeiro de julho de 2006. Tive uma infancia padrão, estudei a vida inteira em escola publica. Em 2021 comecei a jogar RPG com um amigo e tomei gosto, atualmente minha rotina dificulta um pouco mas assim que tiver um tempo vou voltar a jogar. Outras informações sobre mim é que gosto muito de filmes, livros, desenhos, animes e o que estiver relacionada com a cultura pop, ou melhor dizendo, cultura nerd.</p>
+        </section>
+    </main>
+</body>
+</html>
