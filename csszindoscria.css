@@ -1,5 +1,6 @@
 html, body {
     min-height: 100%;
+    margin: 0;
 }
 body{
     margin: 0px 0px;
@@ -30,47 +31,22 @@ header{
 section{
     padding: 2em;
 }
-#introdução{
+/*estilizando as seções*/
+#introdução,
+#O-que-é-RPG,
+#O-que-é-DeD,
+#Regras,
+#Raças-e-Classes,
+#encerramento,
+#história,
+#curiosidades{
     background-image: url(imgs/fundodepapelvelho.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid #380608;
     margin-bottom: 4em;
 }
-#O-que-é-RPG{
-    background-image: url(imgs/fundodepapelvelho.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 3px solid #380608;
-    margin-bottom: 4em; 
-}
-#O-que-é-DeD{
-    background-image: url(imgs/fundodepapelvelho.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 3px solid #380608;
-    margin-bottom: 4em;
-}
-#Regras{
-    background-image: url(imgs/fundodepapelvelho.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 3px solid #380608;
-    margin-bottom: 4em;
-}
-#Raças-e-Classes{
-    background-image: url(imgs/fundodepapelvelho.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 3px solid #380608;
-    margin-bottom: 4em;
-}
-#encerramento{
-    background-image: url(imgs/fundodepapelvelho.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 3px solid #380608;
-}
+
 .ficha{
     background-image: url(imgs/fundodepapelvelho.jpg);
     background-repeat: no-repeat;
@@ -141,16 +117,18 @@ ul{
     list-style-type: none;
 }
 a:link{
-    color: rgb(240, 24, 24);
+    color: #cb2128;
+    text-decoration: none;
 }
 a:hover{
-    color: #cc2228;
+    color: #cc2128;
+    text-decoration: underline;
 }
 a:visited{
-    color: rgb(240, 24, 24);
+    color: #cb2128;
 }
 a:active{
-    color: #a50e13;
+    color: #831518;
 }
 .nota{
     color: #353434;
@@ -160,5 +138,17 @@ p:first-of-type::first-letter {
     font-family: 'OldLondon';
     font-size: 3em;
     line-height: 0.6em;
-    padding-top: 0.1em;
+    margin: 0.1em;
+    margin-bottom: 0;
+}
+/*imagens*/
+#StrTh{
+    width: 25em;
+}
+#imgscriadores{
+    display: flex;
+    justify-content: space-around;
+}
+.criador{
+    width: 8em;
 }
