@@ -14,16 +14,6 @@
             justify-content: center;
             padding: 1%;
         }
-        nav{
-            background-color: #380608;
-            padding: 1%;
-            font-size: x-large;
-        }
-        nav ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
         main{
             display: flex;
             padding: 0px;
@@ -117,12 +107,29 @@
     <header>
         <h1>Sobre nós</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Página Principal</a></li>
-            <li><a href="sobreDavid.html">David, o</a></li>
-            <li><a href="sobreEloy.html">Eloy, o Ladino</a></li>
-        </ul>
+    <nav id="menu">
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div id="lks">
+                <ul>
+                    <li><h2>Páginas</h2></li>
+                    <li><a href="index.html">Principal</a></li>
+                    <li><a href="DnD.html" class="sobre">História do D&D</a></li>
+                    <li><a href="Regras.html" class="sobre">Regras</a></li>
+                    <li><a href="linksobre" class="sobre">Raças</a></li>
+                    <li><a href="linksobre" class="sobre">Classes</a></li>
+                    <li><a href="linksobre" class="sobre">Como criar seu personagem</a></li>
+                    <li><a href="linksobre" class="sobre">Bibliográfia</a></li>
+                    <li><h2>Sobre nós</h2></li>
+                    <li><a href="https://github.com/El0y-C0SM0/Casa-do-Hobbit" class="sobre">A Casa do Hobbit</a></li>
+                    <li><a href="sobreEloy.html" class="sobre">Mestre Eloy, O Ladino</a></li>
+                    <li><a href="sobreDavid.html" class="sobre">Mestre David, o ...</a></li>
+                </ul>
+            </div>
+        </label>
     </nav>
     <main class="sobrepg">
         <section class="ficha">

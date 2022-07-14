@@ -28,6 +28,77 @@ header{
     background-color: #380608;
     box-sizing: border-box;
 }
+#menu{
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#lks{
+    display: none;
+}
+
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+  
+label{
+    position: fixed;
+    top: 2em;
+    left: 2em;
+    cursor: pointer;
+    display: inline-block;
+    height: 22px;
+    width: 30px;
+}
+  
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: #cc2228;
+    transition: 0.25s ease-in-out;
+}
+  
+label span:nth-child(1){
+    top: 0;
+}
+  
+label span:nth-child(2){
+    top: 8px;
+}
+  
+label span:nth-child(3){
+    top: 16px;
+}
+#checkbox-menu:checked + label #lks{
+    background-color: #380608;
+    width: 15em;
+    display: block;
+    border-radius: 7%;
+}
+#checkbox-menu:checked + label #lks ul{
+    margin: 0;
+    padding: 10%;
+}
+  
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+  
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+  
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top:8px;
+}
 section{
     padding: 2em;
 }
@@ -51,9 +122,20 @@ section{
     border: 3px solid #380608;
     margin-bottom: 4em;
 }
+#tipos-de-dano li h3{
+    text-align: left;
+    font-family: 'Oldlondon';
+    text-align: center;
+}
+#tipos-de-dano{
+    text-align: left;
+    margin: 1em;
+    display: inline-block;
+}
 table{
     margin: auto;
     border-collapse: collapse;
+    font-size: medium;
 }
 table td, th{
     text-align: center;
@@ -125,10 +207,7 @@ p{
 }
 
 footer{
-    display: flex;
-    margin: 0% 0% 0% 0%;
-    justify-content: space-evenly;
-    text-align: left;
+    text-align: center;
     padding: 1em 1em;
     background-color: #380608;
     box-sizing: border-box;
