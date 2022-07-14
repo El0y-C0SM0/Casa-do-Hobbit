@@ -38,6 +38,11 @@ section{
 #Regras,
 #Raças-e-Classes,
 #encerramento,
+#Ações,
+#Ataques,
+#VDM,
+#Magia,
+#XP,
 #história,
 #curiosidades{
     background-image: url(imgs/fundodepapelvelho.jpg);
@@ -46,7 +51,22 @@ section{
     border: 3px solid #380608;
     margin-bottom: 4em;
 }
-
+table{
+    margin: auto;
+    border-collapse: collapse;
+}
+table td, th{
+    text-align: center;
+    padding: 1em;
+}
+thead, tr {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.td{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
 .ficha{
     background-image: url(imgs/fundodepapelvelho.jpg);
     background-repeat: no-repeat;
