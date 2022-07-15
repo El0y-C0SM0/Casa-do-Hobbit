@@ -5,29 +5,184 @@ html, body {
 body{
     margin: 0px 0px;
 }
-main{
-    background-image: url("imgs/biblioteca.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 3em;
-}
-main section{
-    margin: 0% 10% 0% 10%;
-    text-align: center;
-    font-size: larger;
-}
+
+
 @font-face {
     font-family: 'OldLondon';
     src: url(Fonts/OldLondon.ttf), url(Fonts/Olondon_.otf);
 }
 header{
+    margin-top: -2em;
+    height: auto;
+    justify-content: center;
+    padding: 1%;
+    color: #cc2228;
     text-align: center;
-    margin: auto;
+    font-size: 2em;
+    margin: 0;
     background-color: #380608;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 450px){
+    main{
+        background-image: url("imgs/Fundomobile(2).jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    header h1{
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    body{
+        font-size: 70%;
+    }
+    header #logo{
+        height: 3em;
+    }
+    section{
+        padding: 5%;
+    }
+    label{
+        position: fixed;
+        top: 2em;
+        left: 2em;
+        cursor: pointer;
+        display: inline-block;
+    }
+    #introdução,
+    #O-que-é-RPG,
+    #O-que-é-DeD,
+    #Regras,
+    #Raças-e-Classes,
+    #encerramento,
+    #Ações,
+    #Ataques,
+    #VDM,
+    #Magia,
+    #XP,
+    #história,
+    #curiosidades{
+        margin-bottom: 8%;
+    }
+    main{
+        padding: 10%;
+    }
+    main section{
+        margin: 0;
+        text-align: center;
+        font-size: small;
+    }
+    .animação{
+        width: 14em;
+        border: 4px solid #380608;
+        border-radius: 50%;
+        margin: 5px;
+    }
+    #imgscriadores{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+    #StrTh{
+        width: 80%;
+    }
+    #caverdra{
+        width: 80%;
+    }
+    .criador{
+        width: 8em;
+    }
+    .sobrepg{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    main section{
+        margin: 3%;
+    }
+    .sobrepg p:first-of-type::first-letter {
+        font-family: 'Times New Roman', Times, serif;
+        float: none;
+        font-size: 1em;
+    }
+    .sobrepg h2, h3, h4{
+        text-align: left;
+        margin-bottom: 0em;
+    }
+}
+@media screen and (min-width: 451px){
+    main{
+        background-image: url("imgs/biblioteca.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    header #logo{
+        height: 5em;
+    } 
+    label{
+        position: fixed;
+        top: 2em;
+        left: 2em;
+        cursor: pointer;
+        display: inline-block;
+    }
+    section{
+        padding: 2em;
+    }
+    #introdução,
+    #O-que-é-RPG,
+    #O-que-é-DeD,
+    #Regras,
+    #Raças-e-Classes,
+    #encerramento,
+    #Ações,
+    #Ataques,
+    #VDM,
+    #Magia,
+    #XP,
+    #história,
+    #curiosidades{
+        margin-bottom: 4em;
+    }
+    main{
+        padding: 3em;
+    }
+    main section{
+        margin: 0% 10% 0% 10%;
+        text-align: center;
+        font-size: larger;
+    }
+    .animação{
+        float: right;
+        width: 60%;
+        border: 4px solid #380608;
+        border-radius: 50%;
+        margin: 5px;
+    }
+    #imgscriadores{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #StrTh{
+        width: 25em;
+    }
+    
+    .criador{
+        width: 8em;
+    }
+    .sobrepg{
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+}
+
 #menu{
     height: 100%;
     position: fixed;
@@ -38,21 +193,15 @@ header{
 #lks{
     display: none;
 }
-
+label{
+    height: 5%;
+    width: 2em;
+}
 #checkbox-menu{
     position: absolute;
     opacity: 0;
 }
   
-label{
-    position: fixed;
-    top: 2em;
-    left: 2em;
-    cursor: pointer;
-    display: inline-block;
-    height: 22px;
-    width: 30px;
-}
   
 label span{
     position: absolute;
@@ -62,6 +211,7 @@ label span{
     border-radius: 30px;
     background: #cc2228;
     transition: 0.25s ease-in-out;
+    z-index: 2;
 }
   
 label span:nth-child(1){
@@ -80,6 +230,11 @@ label span:nth-child(3){
     width: 15em;
     display: block;
     border-radius: 7%;
+    position: fixed;
+    transition: 0.23s ease;
+    top: 1em;
+    left: 1.2em;
+    z-index: 1;
 }
 #checkbox-menu:checked + label #lks ul{
     margin: 0;
@@ -97,10 +252,7 @@ label span:nth-child(3){
   
 #checkbox-menu:checked + label span:nth-child(3){
     transform: rotate(45deg);
-    top:8px;
-}
-section{
-    padding: 2em;
+    top: 8px;
 }
 /*estilizando as seções*/
 #introdução,
@@ -120,18 +272,8 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid #380608;
-    margin-bottom: 4em;
 }
-#tipos-de-dano li h3{
-    text-align: left;
-    font-family: 'Oldlondon';
-    text-align: center;
-}
-#tipos-de-dano{
-    text-align: left;
-    margin: 1em;
-    display: inline-block;
-}
+
 table{
     margin: auto;
     border-collapse: collapse;
@@ -194,13 +336,6 @@ h1, h2, h3, h4{
 p{
     text-align: left;
 }
-.animação{
-    float: right;
-    width: 14em;
-    border: 4px solid #380608;
-    border-radius: 50%;
-    margin: 5px;
-}
 #imagem-de-dado{
     margin-top: 3em;
     height: 10em;
@@ -239,15 +374,4 @@ p:first-of-type::first-letter {
     line-height: 0.6em;
     margin: 0.1em;
     margin-bottom: 0;
-}
-/*imagens*/
-#StrTh{
-    width: 25em;
-}
-#imgscriadores{
-    display: flex;
-    justify-content: space-around;
-}
-.criador{
-    width: 8em;
 }
