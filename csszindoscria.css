@@ -146,20 +146,21 @@ header{
     #Magia,
     #XP,
     #história,
-    #curiosidades{
+    #curiosidades,
+    main section{
         margin-bottom: 4em;
     }
     main{
         padding: 3em;
     }
     main section{
-        margin: 0% 10% 0% 10%;
+        margin: 4em 10% 0% 10%;
         text-align: center;
         font-size: larger;
     }
     .animação{
         float: right;
-        width: 60%;
+        width: 30%;
         border: 4px solid #380608;
         border-radius: 50%;
         margin: 5px;
@@ -267,7 +268,8 @@ label span:nth-child(3){
 #Magia,
 #XP,
 #história,
-#curiosidades{
+#curiosidades,
+section{
     background-image: url(imgs/fundodepapelvelho.jpg);
     background-repeat: no-repeat;
     background-size: cover;
