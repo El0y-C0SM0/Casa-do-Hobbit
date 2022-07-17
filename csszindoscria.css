@@ -118,7 +118,7 @@ header{
         margin-bottom: 0.1em;
     }
     #frasefinal{
-        font-size: medium;
+        font-size: 120%;
     }
 }
 @media screen and (min-width: 561px){
