@@ -119,6 +119,7 @@ header{
     }
     #frasefinal{
         font-size: 120%;
+        line-height: 1.3em;
     }
 }
 @media screen and (min-width: 561px){
