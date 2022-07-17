@@ -104,7 +104,7 @@ header{
         margin-bottom: 0em;
     }
     #checkbox-menu:checked + label #lks{
-        font-size: 120%;
+        font-size: 150%;
     }
     p:first-of-type::first-letter {
         float: left;
@@ -207,8 +207,6 @@ label{
     position: absolute;
     opacity: 0;
 }
-  
-  
 label span{
     position: absolute;
     display: block;
