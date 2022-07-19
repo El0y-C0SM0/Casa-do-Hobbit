@@ -11,7 +11,7 @@ h2{
 }
 .game-board{
     width: 100%;
-    height: 650px;
+    height: 600px;
     border: 1px solid black;
     margin: 0  auto;
     position: relative;
