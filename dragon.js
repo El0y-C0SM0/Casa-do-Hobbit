@@ -8,9 +8,9 @@
       img.src = data
       img.style.width = '773px'
       img.style.height = '850px'
-      img.style.transition = '8s all linear'
+      img.style.transition = '4s all linear'
       img.style.position = 'fixed'
-      img.style.left = '-400px'
+      img.style.left = '-800px'
       img.style.bottom = '0px'
       img.style.zIndex = 999999
   
