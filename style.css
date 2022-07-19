@@ -1,0 +1,74 @@
+* {
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+h2{
+    text-align: center;
+}
+.game-board{
+    width: 100%;
+    height: 650px;
+    border: 1px solid black;
+    margin: 0  auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url(imgs/fundoverde1.gif) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.monstro{
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    
+    animation: movemonster 5s linear  infinite ;
+}
+.hero{
+    position: absolute;
+    bottom: 0px;
+    width: 200px;
+}
+.pular{
+    animation: herojump 2s ease-out;
+}
+
+
+@keyframes herojump {
+    0%{
+        bottom: 0;
+    }
+    
+    40%{
+        bottom: 200px;
+    }
+    50%{
+        bottom: 200px;
+    }
+    60%{
+        bottom: 190px;
+    }
+    70%{
+        bottom: 180px;
+    }
+    100%{
+        bottom: 0px;
+    }
+    
+}
+
+@keyframes movemonster {
+    from{
+        right: -150px;
+
+    }
+    to{
+        right: 100%;
+    }
+    
+}
+
