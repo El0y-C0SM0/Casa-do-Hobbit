@@ -1,15 +1,18 @@
+@font-face {
+    font-family: 'OldLondon';
+    src: url(Fonts/OldLondon.ttf), url(Fonts/Olondon_.otf);
+}
+@font-face {
+    font-family: 'Cinzel-Medium';
+    src: url(/Fonts/Cinzel-Medium.ttf);
+}
 html, body {
     min-height: 100%;
     margin: 0;
 }
 body{
     margin: 0px 0px;
-}
-
-
-@font-face {
-    font-family: 'OldLondon';
-    src: url(Fonts/OldLondon.ttf), url(Fonts/Olondon_.otf);
+    font-family: 'Cinzel-Medium', serif;
 }
 header{
     margin-top: -2em;
@@ -23,7 +26,7 @@ header{
     background-color: #380608;
     box-sizing: border-box;
 }
-
+    
 @media screen and (max-width: 560px){
     main{
         background-image: url("imgs/Fundomobile(2).jpg");
@@ -93,11 +96,6 @@ header{
     }
     main section{
         margin: 3%;
-    }
-    .sobrepg p:first-of-type::first-letter {
-        font-family: 'Times New Roman', Times, serif;
-        float: none;
-        font-size: 1em;
     }
     .sobrepg h2, h3, h4{
         text-align: left;
@@ -187,8 +185,31 @@ header{
         margin: 0.1em;
         margin-bottom: 0.1em;
     }
+    .ficha ul li{
+        margin-top: 0;
+    }
+    .ficha{
+        width: 30%;
+        padding-left: -1em;
+        margin-left: 5%;
+        margin-right: 2%;
+    }
+    .descrição{
+        width: 70%;
+        padding: 3%;
+        margin-left: 2%;
+        margin-right: 5%;
+    }
 }
-
+.sobrepg .descrição p:first-of-type::first-letter {
+    font-family: 'Cinzel-Medium', serif;
+    float: none;
+    font-size: 1em;
+    margin: 0;
+}
+.sobrepg .descrição h2{
+    text-align: left;
+}
 #menu{
     height: 100%;
     position: fixed;
@@ -231,7 +252,7 @@ label span:nth-child(3){
 }
 #checkbox-menu:checked + label #lks{
     background-color: #380608;
-    width: 15em;
+    width: 18em;
     display: block;
     border-radius: 7%;
     position: fixed;
@@ -259,19 +280,7 @@ label span:nth-child(3){
     top: 8px;
 }
 /*estilizando as seções*/
-#introdução,
-#O-que-é-RPG,
-#O-que-é-DeD,
-#Regras,
-#Raças-e-Classes,
-#encerramento,
-#Ações,
-#Ataques,
-#VDM,
-#Magia,
-#XP,
-#história,
-#curiosidades,
+
 section{
     background-image: url(imgs/fundodepapelvelho.jpg);
     background-repeat: no-repeat;
@@ -313,25 +322,33 @@ thead, tr {
     margin: 1em;
     line-height: 0.3;
 }
+.fotinha{
+    height: 15em;
+    margin: 2em 2em 1em 2em;  
+    border-radius: 50%;
+    border: 3px solid #380608;
+}
+.cabeçalho h4{
+    display: inline-block;
+    margin-left: -1em;
+}
+.infocabç{
+    font-size: x-large;
+}
 #atributos{
     clear: left;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    align-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 #logo{
     margin: 1em 0em;
     height: 12em;
 }
-#bemvindo{
-    color: #cc2228;
-    font-size: 52px;
-    margin: 2% 0% 2% 0%;
-    text-shadow: 2px 1px 2px #8b2326;
-    display: flex;  
-    justify-content: center;
+#atributos ul{
+    border: 2px solid #380608;
+    display: inline-block;
+    padding: 0.5em 1em 0.5em 1em;
 }
 h1, h2, h3, h4{
     font-size: 2em;
