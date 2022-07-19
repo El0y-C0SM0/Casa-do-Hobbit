@@ -328,6 +328,8 @@ table{
     margin: auto;
     border-collapse: collapse;
     font-size: medium;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 table td, th{
     text-align: center;
@@ -337,9 +339,15 @@ thead, tr {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
+#tabATR tr th:first-child, td:first-child{
+    border-right: 2px solid black;
+}
+#tabATR tr th:last-child, td:last-child{
+    width: 50%;
+}
 .td{
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 .ficha{
     background-image: url(imgs/fundodepapelvelho.jpg);
