@@ -35,7 +35,7 @@
         var qwop = document.getElementsByClassName('gif-dragon')[0];
         qwop.addEventListener('click', dragon)
       } catch (e) {
-        // console.log("error : "+e);
+        // console.log("error: "+e);
       }
     };
   
@@ -43,7 +43,7 @@
       var data = document.getElementsByClassName('gif-dragon')[0].dataset.src
       init(data);
     } catch (e) {
-      // console.log("error : "+e);
+      // console.log("error: "+e);
     }
   
   })(window);
