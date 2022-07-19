@@ -22,4 +22,5 @@ Nós procuramos dar uma visão resumida, superficial, porém de grande importanc
 - [Uma página que vai te explicar as regras básicas de D&D](https://el0y-c0sm0.github.io/Casa-do-Hobbit/Regras.html)
 - [Uma página para te apresentar as principais Raças de D&D](https://el0y-c0sm0.github.io/Casa-do-Hobbit/Ra%C3%A7as.html)
 - [Uma página para te apresentar as principais Classes de D&D](https://el0y-c0sm0.github.io/Casa-do-Hobbit/Classes.html)
+- [Um tutorial de como criar um personagem](https://el0y-c0sm0.github.io/Casa-do-Hobbit/Tutorial.html)
 - [Curiosidades sobre D&D](https://el0y-c0sm0.github.io/Casa-do-Hobbit/DnD.html)
