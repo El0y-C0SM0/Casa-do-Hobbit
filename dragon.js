@@ -1,4 +1,3 @@
-// GIF -- dragon -- start
 (function (window) {
     "use strict"
   
@@ -12,7 +11,7 @@
       img.style.position = 'fixed'
       img.style.left = '-800px'
       img.style.bottom = '0px'
-      img.style.zIndex = 999999
+      img.style.zIndex = 100
   
       document.body.appendChild(img)
   
@@ -47,4 +46,4 @@
     }
   
   })(window);
-  // GIF -- dragon -- end
+
