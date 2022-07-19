@@ -47,13 +47,13 @@ h2{
         bottom: 200px;
     }
     50%{
-        bottom: 200px;
-    }
-    60%{
         bottom: 190px;
     }
+    60%{
+        bottom: 200px;
+    }
     70%{
-        bottom: 180px;
+        bottom: 190px;
     }
     100%{
         bottom: 0px;
