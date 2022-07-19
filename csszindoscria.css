@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: 'Cinzel-Medium';
-    src: url(/Fonts/Cinzel-Medium.ttf);
+    src: url(Fonts/Cinzel-Medium.ttf);
 }
 html, body {
     min-height: 100%;
