@@ -440,3 +440,51 @@ a:active{
 .raca {
     
 }
+#inicio{
+    position: fixed;
+    background-image: url("imgs/layout.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+   
+}
+.initial{
+    font-size: 100px;
+    background-image: linear-gradient(rgb(255, 0, 0), rgb(  200, 200, 200), rgb(123, 123, 123), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    text-shadow: 5 px 5 px 5px black;
+}
+.explorar{
+    position:absolute;
+    margin-left: 40%;
+    margin-right: 50%;
+    font-size: 70px;
+    color: black;
+    background-image: linear-gradient(white,rgb(121, 117, 117));
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px white;
+    text-decoration: none;
+    box-decoration-break: none;
+}
+.explorar:hover{
+    box-shadow: 10px 10px 10px rgb(133, 30, 30);
+    cursor: pointer;
+    text-decoration: none;
+    background-image: linear-gradient(white,rgb(167, 45, 45));
+}
+.move{
+    transition: 3s;
+    opacity: 1;
+}
+.mostra{
+    transition: 3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+ 
+
