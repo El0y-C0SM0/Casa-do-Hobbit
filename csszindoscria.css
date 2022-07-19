@@ -217,6 +217,12 @@ header{
         margin-right: 5%;
     }
 }
+.raca{
+    width: 40%;
+}
+#classe img{
+    width: 40%;
+}
 #bibli{
     display: grid;
 }
@@ -436,9 +442,6 @@ a:active{
 }
 .nota{
     color: #353434;
-}
-.raca {
-    
 }
 #inicio{
     position: fixed;
