@@ -9,9 +9,17 @@
     <title>Casa do Hobbit</title>
 </head>
 <body>
+    <div id="inicio" class="move">
+        
+        <h1 class="initial">Preparado para conhecer o mundo de Rpg!?</h1>
+        <button class="explorar" onclick="desaparece()">Explorar</button>
+    
+    </div>
+
     <header>
         <img src="imgs/logo.png" alt="logo de D&D5E" id="logo">
     </header>
+    
     <nav id="menu">
         <input type="checkbox" id="checkbox-menu">
         <label for="checkbox-menu">
@@ -25,26 +33,24 @@
                     <li><a href="Regras.html" class="sobre">Regras</a></li>
                     <li><a href="Raças.html" class="sobre">Raças</a></li>
                     <li><a href="Classes.html" class="sobre">Classes</a></li>
-                    <li><a href="Tutorial.html" class="sobre">Como criar seu personagem</a></li>
-                    <li><a href="https://www.bibliotecaelfica.org/dd-5e/dd-5e-livro-do-jogador-fundo-colorido/">Livro do Jogador</a></li>
-                    <li><a href="bibliografia.html">Bibliográfia</a></li>
+                    <li><a href="linksobre" class="sobre">Como criar seu personagem</a></li>
                     <li><h2>Sobre nós</h2></li>
                     <li><a href="https://github.com/El0y-C0SM0/Casa-do-Hobbit" class="sobre">A Casa do Hobbit</a></li>
                     <li><a href="sobreEloy.html" class="sobre">Mestre Eloy, O Ladino</a></li>
                     <li><a href="sobreDavi.html" class="sobre">Mestre Davi, o ...</a></li>
-                    <li><a href="sobreDavid.html" class="sobre">Mestre David, o Bábaro</a></li>
+                    <li><a href="sobreDavid.html" class="sobre">Mestre David, o ...</a></li>
                 </ul>
             </div>
         </label>
     </nav>
     <main>
-        <section>
+        <section id="introdução">
             <h1>Bem Vindo Jovem e Inesperiente Aventureiro!</h1>
             <p>
                 Confuso? Bem, nós vamos servir como aquela taverna onde você se reúne com seu grupo para descobrir informações para a sua próxima missão. Primeiro se acomode perto da lareira que vamos para as explicações.
             </p>
         </section>
-        <section>
+        <section id="O-que-é-RPG">
             <h1>O que é RPG</h1>
             <h3 class="frases-legais">
                 RPG é sobre se deixar levar pela imaginação
@@ -59,7 +65,7 @@
                 <strong>Nota:</strong> existem outros tipos de RPG, mas aqui iremos tratar do clássico RPG de mesa
             </p>
         </section>
-        <section>
+        <section id="O-que-é-DeD">
             <h1>O que é? Por que D&D?</h1>
             <p>
                 Dungeons and Dragons (D&D para os mais íntimos) foi o primeiro RPG criado e é até hoje o mais famoso e mais jogado do mundo. Com forte inspiração nas obras de Tolkien ele está na sua quinta edição e se passa em universo de fantasia medieval com Elfos, Orcs, bruxos e… claro, Dragões. Para saber mais sobre a história de D&D <a href="DnD.html" class="links">clique aqui</a>.
@@ -68,7 +74,7 @@
                 Nós, mestres dos dados previmos que você teria uma promissora trajetória como herói (ou será como vilão?), e por isso decidimos doutrina-lo em um dos mais antigos testamentos nerds, o D&D. Então o que estamos esperando para começar?
             </p>
         </section>
-        <section>
+        <section id="Regras">
             <h1>Regras</h1>
             <p>
                 Como eu disse, apesar de parecer uma bagunça, RPG tem regras, mas a maior regra é a diversão, então vale sempre conversa com seu mestre ou jogadores para ver se cabe uma modificação nas regras propostas pelo livro, essas alterações nas regras são chamadas de “Homebrews” ou regras da casa e existem desde a primeira mesa de RPG.
@@ -83,13 +89,13 @@
                 Para poder ver as principais regras de um jogo de RPG <a href="Regras.html">acesse esse link</a> e veja uma coletânea que reunimos após ler muitos pergaminhos antigos e decifrar runas esquecidas.
             </p>
         </section>
-        <section>
+        <section id="Raças-e-Classes">
             <h1>Raças e Classes</h1>
             <p>
                 Bem, falar de jogos de RPG é falar de imaginação, como já mencionamos, então por nos limitarmos a viver vidas humanas e nos ater a um único ofício sem criatividade? Não há motivos, para isso que servem as Raças e as Classes.
             </p>
             <h2>Raças</h2>
-            <a href="Raças.html"><img src="imgs/imgraças/IMG-20220627-WA0034.jpg" alt="" class="animação"></a>
+            <img src="imgs/imgraças/IMG-20220627-WA0034.jpg" alt="" class="animação">
             <!--animação em java float a esquerda com as setinhas para passar-->
             <p class="narração">
                 “Imagine você, entrando em uma cidade, atravessa os grande portão dela, sente aquele cheiro típico das grandes cidades, cheiro de gente, das cozinhas, das especiarias do mercado e do saneamento precário. Você anda pelas ruas de calçamento da cidade e percebe que as pessoas te encaram, não com desprezo, sim com fascínio, com curiosidade. São pessoas de todo tipo, Elfos, Anões, Halflings, mas olhando bem você entende o motivo do interesse deles por você, você é o único humano.”
@@ -98,7 +104,7 @@
                 O universo de um RPG é repleto por diversos tipos seres e criaturas, desses cada um interage de forma diferente com meio. Escolher qual a raça do seu personagem, além do fator estético, ajuda a definir e características dele, tanto físicas como comportamentais. Um Anão por exemplo, costuma ser forte, com uma constituição invejável, um gênio difícil de lidar mas de índole leal, uma vez conheci um, dizia que seu lar e a riqueza de sua família tinha sido roubado por um dragão e que agora estava em uma jornada para recuperar o que era seu por direito, ele, mais os 12 anões que o acompanhavam tinham exatamente esse perfil, fortes, destemidos e leais. Para saber mais sobre as raças clique na imagem. 
             </p>
             <h2>Classes</h2>
-            <a href="Classes.html"><img src="imgs/imgraças/IMG-20220627-WA0035.jpg" alt="" class="animação"></a>
+            <img src="imgs/imgraças/IMG-20220627-WA0035.jpg" alt="" class="animação">
             <!--animação em java float a esquerda com as setinhas para passar-->
             <p class="narração">
                 “Um grupo explora uma masmorra, são quatro pessoas, um ladino, um paladino, um bárbaro e bruxo. Eles avançam com calma, seguindo a formação da ordem que foram citados, o lugar é escuro e tem um cheiro fétido, o bruxo já está ficando nauseado, o paladino segue convicto no objetivo inicial do grupo, o ladino está concentrado em identificar armadilhas e o bárbaro já está sem paciência com o vagaroso avanço, o objetivo deles é encontrar um companheiro de aventura que foi sequestrado por goblins. Nesse ritmo não demora muito para o bárbaro tomar a iniciativa da empreitada e seguir o caminho ignorando todas as armadilhas, nisso tudo vira o maior caos, são flechas envenenadas voando, magias sendo ativadas, inimigos sendo alertados, mas enfim, com as magias do bruxo, a força do bárbaro, a habilidade do paladino e a astúcia do ladino todos chegam à última sala da masmorra porém lá tem uma desagradável surpresa, ou nem tanto. Eles não encontram seu amigo mas encontram um sarcófago cheio de tesouros. O bruxo acha uma má ideia saquear o sarcófago por causa das possíveis maldições, o paladino acha mais importante continuar a busca, o ladino observa possíveis armadilhas e está tentado a pegar o tesouro e o bárbaro. Qual será a continuação da história?”
@@ -107,19 +113,33 @@
                 As classes são uma mecânica muito importante em um RPG, elas definem muitas características dos personagens, elas dizem por exemplo as proficiências deles, como interagem com o com o mundo, como se comportam a mais diversas situações e também fala muito sobre a índole deles, por exemplo, é um guerreiro divino que jura defender a justiça. Existem diversas classes, com subclasses e combinações que chamamos de multiclasse, para saber mais clique no bonequinho.
             </p>
         </section>
-        <section>
+        <section id="encerramento">
             <h1>E agora? Pronto para começar sua jornada?</h1>
             <p>
                 Bem, te demos o melhor equipamento que poderíamos te dar, o conhecimento. ágora vá, a Terras Intermédias precisam de você maculado (não, dessa vez não é referência ao Senhor dos Anéis, na verdade é uma referência a algo que faz referência a Senhor dos Anéis), mas antes, pegue um saco de moedas, suprimentos, uma montaria, armas (porquê nem todos o oponentes vão se ferir com apenas com o seu conhecimento), reúna um gruo de bravos amigos e partiu se aventurar por esse mundo incrível.</p>
             <p>
                 Para te ajudar nessa tarefa preparámos uma página onde você poderá criar uma ficha quem nem os antigos feiticeiros criavam, basta <a href="mandaparaapaginadecomomontarficha">acessar esse link</a>. Caso queira uma maneira mais rápida tem uma magia incrível criada pelos Elfos que te permite criar uma ficha de personagem rapidamente, o nome dessa magia é D&D Beyond e você pode acessa-la <a href="https://www.dndbeyond.com/characters">por aqui</a> (te garanto que ela ajuda muito).
             </p>
-            <h2 class="frases-legais">Agora tome cuidado com os Orcs, não roube <a class="gif-click gif-dragon" data-src='./imgs/dragon.gif'>dragões</a> sem um bom motivo e/ou bom disfarce e… acima de tudo… divirta-se!</h2>
+            <h2 id="frasefinal">Agora tome cuidado com os Orcs, não roube dragões sem um bom motivo e/ou bom disfarce e… acima de tudo… divirta-se!</h2>
         </section>
+        
     </main>
     <footer>
         <img id="imagem-de-dado" src="imgs/dado-rodapé.png" alt="imagem de um dado">
     </footer>
-    <script src="dragon.js"></script>
+    
+    
+    <script>
+        
+        function desaparece(){
+            let transit = document.getElementById('inicio');
+            if(transit.classList.contains('move')){
+                transit.classList.add('mostra');
+                transit.classList.remove('move');
+
+            }
+            
+        }
+    </script>
 </body>
 </html>
