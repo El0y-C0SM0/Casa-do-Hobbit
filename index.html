@@ -9,6 +9,12 @@
     <title>Casa do Hobbit</title>
 </head>
 <body>
+    <div id="inicio" class="move">
+        
+        <h1 class="initial">Preparado para conhecer o mundo de Rpg!?</h1>
+        <button class="explorar" onclick="desaparece()">Explorar</button>
+    
+    </div>
     <header>
         <img src="imgs/logo.png" alt="logo de D&D5E" id="logo">
     </header>
@@ -121,5 +127,17 @@
         <img id="imagem-de-dado" src="imgs/dado-rodapé.png" alt="imagem de um dado">
     </footer>
     <script src="dragon.js"></script>
+    <script>
+        
+        function desaparece(){
+            let transit = document.getElementById('inicio');
+            if(transit.classList.contains('move')){
+                transit.classList.add('mostra');
+                transit.classList.remove('move');
+
+            }
+            
+        }
+    </script>
 </body>
 </html>
