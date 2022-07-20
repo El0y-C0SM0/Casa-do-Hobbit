@@ -168,7 +168,7 @@ header{
         text-align: center;
         font-size: larger;
     }
-    
+
     .ilustração{
         float: right;
         width: 20%;
@@ -216,6 +216,9 @@ header{
         margin-left: 2%;
         margin-right: 5%;
     }
+}
+#video{
+    width: 70%;
 }
 .raca{
     width: 40%;
