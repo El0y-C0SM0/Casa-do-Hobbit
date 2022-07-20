@@ -6,77 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="csszindoscria.css">
     <title>Sobre Davi</title>
-    <style>
-        /*preferi usar style para aproveitar o outro css e só fazer algumas alterações e tambem porque é mais*/
-        
-        .ficha{
-            flex: 3;
-            padding-left: -1em;
-        }
-        .descrição{
-            flex: 4;
-            padding: 5%;
-        }
-        .fotinha{
-            height: 15em;
-            margin: 2em 2em 1em 2em;  
-            border-radius: 50%;
-            border: 3px solid #380608;
-        }
-        .cabeçalho h4{
-            display: inline-block;
-            margin-left: -1em;
-        }
-        .infocabç{
-            font-size: x-large;
-        }
-        /*tem que arrumar a parte que aparece os atributos para aparecerem em article do mesmo tamamho e 3 por linha, tentei usar grid*/
-        article{
-            border: 2px solid #380608;
-            margin: 3% 3%;
-        }
-        article ul{
-            padding-left: 1em;
-            padding-right: 1em;
-        }
-        .atributos{
-            justify-content: left;
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas: 
-                "HP Prof Armor"
-                "Força Des Caris"
-                "Sab Int Const";
-        }
-        #HP{
-            grid-area: HP;
-        }
-        #Prof{
-            grid-area: Prof;
-        }
-        #Armor{
-            grid-area: Armor;
-        }
-        #Força{
-            grid-area: Força;
-        }
-        #Des{
-            grid-area: Des;
-        }
-        #Caris{
-            grid-area: Caris;
-        }
-        #Sab{
-            grid-area: Sab;
-        }
-        #Int{
-            grid-area: Int;
-        }
-        #Const{
-            grid-area: Const;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -95,13 +24,14 @@
                     <li><a href="DnD.html" class="sobre">História do D&D</a></li>
                     <li><a href="Regras.html" class="sobre">Regras</a></li>
                     <li><a href="Raças.html" class="sobre">Raças</a></li>
-                    <li><a href="linksobre" class="sobre">Classes</a></li>
-                    <li><a href="linksobre" class="sobre">Como criar seu personagem</a></li>
+                    <li><a href="Classes.html" class="sobre">Classes</a></li>
+                    <li><a href="Tutorial.html" class="sobre">Como criar seu personagem</a></li>
                     <li><a href="https://www.bibliotecaelfica.org/dd-5e/dd-5e-livro-do-jogador-fundo-colorido/">Livro do Jogador</a></li>
+                    <li><a href="bibliografia.html">Bibliográfia</a></li>
                     <li><h2>Sobre nós</h2></li>
                     <li><a href="https://github.com/El0y-C0SM0/Casa-do-Hobbit" class="sobre">A Casa do Hobbit</a></li>
                     <li><a href="sobreEloy.html" class="sobre">Mestre Eloy, O Ladino</a></li>
-                    <li><a href="sobreDavid.html" class="sobre">Mestre David, o ...</a></li>
+                    <li><a href="sobreDavid.html" class="sobre">Mestre David, o Bárbaro</a></li>
                 </ul>
             </div>
         </label>
@@ -109,72 +39,72 @@
     <main class="sobrepg">
         <section class="ficha">
             <div class="cabeçalho">
-                <img src="imgs/pfpdavi.jpg" alt="Davi, ***" class="fotinha">
+                <img src="imgs/pfpdavi.jpg" alt="Davi, O Indecifravel" class="fotinha">
                 <ul>
                     <li><h4>Nome:</h4> <span class="infocabç">Davi Lucas</span></li>
-                    <li><h4>Classe:</h4> <span class="infocabç">Mestiço: Elfo negro/ Draconato</span></li>
+                    <li><h4>Raça:</h4> <span class="infocabç">Mestiço: Drow / Draconato</span></li>
                     <li><h4>Nivel:</h4> <span class="infocabç">15</span></li>
                 </ul>
             </div>
             <div id="atributos">
-                <article id="HP">
+                <article>
                     <ul>
                         <li>HP</li>
                         <li>50/50</li>
                     </ul>
                 </article>
-                <article id="Prof">
+                <article>
                     <ul>
-                        <li>Proficiência</li>
+                        <li>Prof</li>
                         <li>+3.14159...</li>
                     </ul>
                 </article>
-                <article id="Armor">
+                <article>
                     <ul>
-                        <li>Armor</li>
+                        <li>CA</li>
                         <li>+1</li>
                     </ul>
                 </article>
-                <article id="Força">
+                <article>
                     <ul>
-                        <li class="atr">força</li>
+                        <li>For</li>
                         <li>11</li>
-                        <li class="modatr">+3</li>
+                        <li>+3</li>
                     </ul>
                 </article>
-                <article id="Des">
+                <article>
                     <ul>
-                        <li class="atr">destreza</li>
+                        <li>Des</li>
                         <li>14</li>
-                        <li class="modatr">+1</li>
+                        <li>+1</li>
                     </ul>
                 </article>
-                <article id="Caris">
+                <article>
                     <ul>
-                        <li class="atr">carisma</li>
+                        <li>Car</li>
                         <li>7</li>
-                        <li class="modatr">+3</li>
+                        <li>+3</li>
                     </ul>
                 </article>
-                <article id="Sab">
+                <article>
                     <ul>
-                        <li class="atr">sabedoria</li>
+                        <li>Sab</li>
                         <li>10</li>
-                        <li class="modatr">+4</li>
+                        <li>+4</li>
                     </ul>
                 </article>
-                <article id="Int">
+                <article>
                     <ul>
-                        <li class="atr">inteligência</li>
+                        <li>Int</li>
                         <li>12</li>
-                        <li class="modatr">+1</li>
+                        <li>+1</li>
                     </ul>
                 </article>
-                <article id="Const">
+                <article>
                     <ul>
-                        <li class="atr">constituição</li>
+                        <li>Con</li>
                         <li>4</li>
-                        <li class="modatr">+3</li>
+                        <li>+3</li>
                     </ul>
                 </article>
             </div>
