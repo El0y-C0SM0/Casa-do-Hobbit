@@ -446,6 +446,17 @@ a:active{
     background-size: cover;
    
 }
+@media (max-width: 560px) {
+    #inicio {
+        display:none;
+    }
+}
+
+@media (max-height: 450px) {
+    #inicio {
+        display:none;
+    }
+}
 .initial{
     font-size: 100px;
     background-image: linear-gradient(rgb(255, 0, 0), rgb(  200, 200, 200), rgb(123, 123, 123), rgb(255, 255, 255));
@@ -482,6 +493,4 @@ a:active{
     opacity: 0;
     visibility: hidden;
 }
-
- 
 
